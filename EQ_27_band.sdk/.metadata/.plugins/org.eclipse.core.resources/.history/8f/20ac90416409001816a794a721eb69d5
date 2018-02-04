@@ -20,6 +20,7 @@
 XGpio Gpio;											/* GPIO Device driver instance for LEDs */
 
 char str[100];
+//int temp, i;
 int send_a1, send_a2, send_b1, send_b2;
 
 struct coefs {
@@ -49,6 +50,9 @@ int main()
 	/* Write output to the LEDs. */
 	XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, led);
 //--------------  END OF LEDS  ---------------------------------------------
+
+	xil_printf("Hello World\n\r");
+
 	xil_printf("Entering Main\r\n");
 	//Configure the IIC data structure
 	IicConfig(XPAR_XIICPS_0_DEVICE_ID);

@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+
 #include "xparameters.h"
 #include "xgpio.h"
 #include "xstatus.h"
 #include "xil_mmu.h"
 #include "xil_assert.h"
 #include "xil_io.h"
+
 #include "audio.h"
 #include "math.h"
+// Note: Must enter the 'm' character to the SDK Project->Properties->Linker->Libraries (-l) section.
+//       If, during compiling, the trig functions show up as "not found" this has not been done.
 
 /* Definitions */
 #define GPIO_DEVICE_ID  XPAR_AXI_GPIO_0_DEVICE_ID	/* GPIO device that LEDs are connected to */
@@ -19,7 +23,14 @@
 
 XGpio Gpio;											/* GPIO Device driver instance for LEDs */
 
+int Fs;
+float q0, f0, p, pi = 3.141592653;
+float t1, t2, t3, t4, t5, t6, t7, fn, q;
+float tb0, tb1, tb2, ta1, ta2;
+float b0, b1, b2, a1, a2;
 char str[100];
+int temp, i;
+
 int send_a1, send_a2, send_b1, send_b2;
 
 struct coefs {
@@ -49,6 +60,9 @@ int main()
 	/* Write output to the LEDs. */
 	XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, led);
 //--------------  END OF LEDS  ---------------------------------------------
+
+	xil_printf("Hello World\n\r");
+
 	xil_printf("Entering Main\r\n");
 	//Configure the IIC data structure
 	IicConfig(XPAR_XIICPS_0_DEVICE_ID);
@@ -86,22 +100,22 @@ int main()
 	Xil_Out32( 0x43c0000c, 0 );
 
 	// Now convert the floating point coef.s to fractional integers and send to the filter.
-    send_a1 = ( (signed int) (set1.a1 * 0x10000000) );
+    send_a1 = ( (signed int) (set1.a1* 0x10000000) );
     //xil_printf("send_a1 = %x\n\r", send_a1);
     //send_a1 = 0;
     Xil_Out32( 0x43c00000, send_a1 );
 
-    send_a2 = ( (signed int) (set1.a2 * 0x10000000) );
+    send_a2 = ( (signed int) (set1.a2* 0x10000000) );
     //xil_printf("send_a2 = %x\n\r", send_a2);
     //send_a2 = 0;
     Xil_Out32( 0x43c00004, send_a2 );
 
-    send_b1 = ( (signed int) (set1.b1 * 0x10000000) );
+    send_b1 = ( (signed int) (set1.b1* 0x10000000) );
     //xil_printf("send_b1 = %x\n\r", send_b1);
     //send_b1 = 0;
     Xil_Out32( 0x43c00008, send_b1 );
 
-    send_b2 = ( (signed int) (set1.b2 * 0x10000000) );
+    send_b2 = ( (signed int) (set1.b2* 0x10000000) );
     //xil_printf("send_b2 = %x\n\r", send_b2);
     //send_b2 = 0;
     Xil_Out32( 0x43c0000c, send_b2 );
@@ -117,8 +131,6 @@ int main()
 //          multiply them by two prior to using them.
 // f0 is the center frequency of the filter in Hz, and p is the gain.
 // For p, 0.001 = flat, 1.0 = +3 dB gain, 2.0 = +6 dB gain, -1.0 = -6 dB gain,...
-// Note: Must enter the 'm' character to the SDK Project->Properties->Linker->Libraries (-l) section.
-//       If, during linking, the trig functions below show up as "not found," this has not been done!
 void set_coef( struct coefs *this_set, float f0, float p)
 {
 	float Fs, q0;

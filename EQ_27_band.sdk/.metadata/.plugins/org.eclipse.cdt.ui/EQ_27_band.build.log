@@ -1,4 +1,4 @@
-17:01:05 **** Auto Build of configuration Debug for project EQ_27_band ****
+20:31:23 **** Auto Build of configuration Debug for project EQ_27_band ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -15,9 +15,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size EQ_27_band.elf  |tee "EQ_27_band.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  91316	   2620	  23648	 117584	  1cb50	EQ_27_band.elf
+  91300	   2620	  23552	 117472	  1cae0	EQ_27_band.elf
 'Finished building: EQ_27_band.elf.size'
 ' '
 
-17:01:06 Build Finished (took 720ms)
+20:31:24 Build Finished (took 673ms)
 
