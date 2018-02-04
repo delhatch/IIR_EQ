@@ -1,45 +1,39 @@
-# VGA_mem_mapped
+# IIR_EQ
 
-![screenshot](https://github.com/delhatch/VGA_mem_mapped/blob/master/Picture.jpg)
-![screenshot](https://github.com/delhatch/VGA_mem_mapped/blob/master/system_diagram.JPG)
+![screenshot](https://github.com/delhatch/IIR_EQ/blob/master/cut.jpg)
+![screenshot](https://github.com/delhatch/IIR_EQ/blob/master/flat.jpg)
+![screenshot](https://github.com/delhatch/IIR_EQ/blob/master/boost.jpg)
+![screenshot](https://github.com/delhatch/IIR_EQ/blob/master/system_architecture.JPG)
 
 Author
 
 Del Hatch
 
-** Memory-mapped VGA display
+** IIR filter
 
-The purpose of this project is to demostrate the functionality of a memory-mapped VGA display. The VGA core is by Andrew Powell (https://github.com/andrewandrepowell/VGA_1.0/)
+The purpose of this project is to demostrate an IIR filter implemented with integer math.
 
-The VGA module instantiates a single line pixel buffer (640 pixels) in a local Block RAM. During each Horizontal blanking period, it sets up a transfer from DRAM into the local BRAM. This completes during the H blanking period.
 
-The C code for the project uses the VGA in two different ways: one, through a local frame buffer that is memcopy'd to the VGA frame buffer DRAM, and second, through direct writes into the DRAM frame memory.
 
-The Mandelbrot image calculation takes place on the ARM core, and is straightforward. The color shading algorithm is implimented as part of the vga_set_pixel() routine in VGA.c.
+** I2S AXI4 Serial Master and Slave
 
-** VGA Generator
+To aid in creating a modular system, I created an AXI Serial Master that reads the audio (I2S format) from the A-to-D converter and sends it to any AXI Serial Slave.
 
-The Zedboard documentation does not provide a lot of support for using the VGA port. I hope this project will be useful to others wanting to use the VGA port on their Zedboard.
+I also created an AXI Serial Slave that reads the audio data from a Master, and outputs it to the D-to-A converter. The Slave monitors the LRCLK that runs at the sample rate (48 kHz). On every rising edge, it requests a stereo sample (L and R audio) word pair. It then clock it out to the DAC.
 
-To control the VGA core, there are two configuration registers:
-Reg #0) This is at the BASE ADDRESS. (Probably 0x43c0_0000.) Write the base address where the VGA image data in DRAM will reside. I used 0x0020_0000.
-Reg #2) Set the lowest bit at this address (OFFSET 0x8) to 1'b1 to start the VGA controller running.
+** EQ Module
 
-** Performance
+In between the AXI Master and Slave is a module that receives the audio data from the AXI Serial Master, applies the IIR filter, and then sends the filtered audio to the AXI Slave (for output to the DAC).
 
-The Mandelbrot image takes 2.2 seconds to create, using the ARM processor on the XC7Z020 on the Zedboard. This compares very favorably to Altera NIOS version (on DE2-115) which takes 12 minutes(!).
-
-However, this is much slower than the direct-logic implimentation I created at https://github.com/delhatch/Zedboard_Mandel. Using RTL computation engines it achieves 18.6 frames per second, a speedup of 41 times over this project's ARM-only implementation.
+This module receives the filter coefficients from the Zynq ARM processor. See the C files in the EQ_27_band.sdk folder. The C code calculates the coefficients. The user can specify the filter center frequency, and choose to apply cut or boost, up to +/- 12 dB. The Q of the filter is hard-coded to be 4.3/3.0 which establishes it as octave band-width filter.
 
 ** Create Project
 
 In Vivado 2017.4, build the system as shown in the system_diagram.jpg file.
 
-![system diagram](https://github.com/delhatch/VGA_mem_mapped/blob/master/system_diagram.JPG)
+![system diagram](https://github.com/delhatch/IIR_EQ/blob/master/system_architecture.JPG)
 
-The VGA core is found (packed as IP) in the directory VGA_1_0_D. You will have to modify the Vivado IP directory path settings.
-
-Allow the tool to assign default addresses. It should assign the LED GPIO port to 0x41200000 and the VGA controller to 0x43c00000.
+It requires three IP cores, in the folders "axi_i2s_transmitter" "eq_core" and "axi_i2s_receiver_1.0" respectively.
 
 
 ** Improvements
