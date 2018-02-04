@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="i2s_receiver_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="i2s_receiver_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2770000001fs"></ZoomEndTime>
+      <Cursor1Time time="2000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="432"></NameColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/i2s_receiver_tb/sck" type="logic">
+      <obj_property name="ElementShortName">sck</obj_property>
+      <obj_property name="ObjectShortName">sck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/ws" type="logic">
+      <obj_property name="ElementShortName">ws</obj_property>
+      <obj_property name="ObjectShortName">ws</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/sd" type="logic">
+      <obj_property name="ElementShortName">sd</obj_property>
+      <obj_property name="ObjectShortName">sd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/sd_pre" type="logic">
+      <obj_property name="ElementShortName">sd_pre</obj_property>
+      <obj_property name="ObjectShortName">sd_pre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/data_left" type="array">
+      <obj_property name="ElementShortName">data_left[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_left[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/data_right" type="array">
+      <obj_property name="ElementShortName">data_right[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_right[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/expected" type="array">
+      <obj_property name="ElementShortName">expected[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/sent" type="array">
+      <obj_property name="ElementShortName">sent[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sent[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/shift_data" type="array">
+      <obj_property name="ElementShortName">shift_data[0:39]</obj_property>
+      <obj_property name="ObjectShortName">shift_data[0:39]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/stimulus_complete" type="logic">
+      <obj_property name="ElementShortName">stimulus_complete</obj_property>
+      <obj_property name="ObjectShortName">stimulus_complete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/length" type="array">
+      <obj_property name="ElementShortName">length[31:0]</obj_property>
+      <obj_property name="ObjectShortName">length[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/word_size" type="array">
+      <obj_property name="ElementShortName">word_size[31:0]</obj_property>
+      <obj_property name="ObjectShortName">word_size[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/max_transmitted_sample" type="array">
+      <obj_property name="ElementShortName">max_transmitted_sample[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max_transmitted_sample[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/dut/wsd" type="logic">
+      <obj_property name="ElementShortName">wsd</obj_property>
+      <obj_property name="ObjectShortName">wsd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/dut/wsp" type="logic">
+      <obj_property name="ElementShortName">wsp</obj_property>
+      <obj_property name="ObjectShortName">wsp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/dut/data_L_enable" type="logic">
+      <obj_property name="ElementShortName">data_L_enable</obj_property>
+      <obj_property name="ObjectShortName">data_L_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/i2s_receiver_tb/dut/data_R_enable" type="logic">
+      <obj_property name="ElementShortName">data_R_enable</obj_property>
+      <obj_property name="ObjectShortName">data_R_enable</obj_property>
+   </wvobject>
+</wave_config>

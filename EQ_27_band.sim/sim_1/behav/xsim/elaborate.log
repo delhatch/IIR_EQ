@@ -1,0 +1,7 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 2fca4aa63140466781da8b45aaefd2e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot axi_i2s_receiver_tb_behav xil_defaultlib.axi_i2s_receiver_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <axi_i2s_receiver_v1_0_M_AXIS> not found while processing module instance <axi_i2s_receiver_v1_0_M_AXIS_inst> [C:/Zynq_Book/ip_repo/axi_i2s_receiver_1.0/src/axi_i2s_receiver_v1_0.v:35]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

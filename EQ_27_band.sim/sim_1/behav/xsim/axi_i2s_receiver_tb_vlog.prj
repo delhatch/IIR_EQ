@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../ip_repo/axi_i2s_receiver_1.0/src/axi_i2s_receiver_v1_0.v" \
+"../../../../../ip_repo/axi_i2s_receiver_1.0/src/axi_i2s_receiver_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

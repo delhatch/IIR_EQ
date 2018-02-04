@@ -1,0 +1,828 @@
+!SESSION 2018-02-03 14:12:57.625 -----------------------------------------------
+eclipse.buildId=2017.4
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk
+
+This is a continuation of log file C:\Zynq_Book\EQ_27_band\EQ_27_band.sdk\.metadata\.bak_0.log
+Created Time: 2018-02-03 16:39:02.298
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.298
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.301
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.351
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.355
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.420
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.423
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.491
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.495
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.565
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.569
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.638
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.642
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.712
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.716
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.785
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.789
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.857
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.861
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.928
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:02.933
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.019
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.023
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.093
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.097
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.163
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.166
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.237
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.241
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.350
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.354
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.571
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.576
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.650
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.654
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.723
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.727
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.810
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.814
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.876
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.880
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:03.932
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.040
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.073
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.076
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.123
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.147
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.151
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.199
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.246
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.250
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:04.298
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:05.097
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:05.102
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:05.150
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:05.967
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:05.970
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:06.022
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:07.166
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:07.170
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:07.217
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:07.897
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:07.901
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:07.958
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:08.885
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:08.889
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:08.938
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:10.182
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:10.185
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:10.232
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:11.138
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:11.141
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:11.192
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:11.973
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:11.976
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:12.026
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:12.474
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:12.477
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:12.525
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:12.958
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:12.961
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:13.008
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:13.900
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:13.905
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:13.978
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:17.739
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:17.742
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:17.793
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:18.403
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:18.407
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:18.455
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:19.417
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:19.420
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:19.470
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:20.465
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:20.468
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:20.516
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:21.418
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-02-03 16:39:21.436
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:12.992
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:12.995
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:12.995
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:12.997
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:12.997
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:12.998
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:29.743
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:29.745
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.541
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.545
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.545
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.547
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.548
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.557
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A2729F]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.558
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.565
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248A2729F]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.565
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A2729F" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.583
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A2729F" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.583
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A2729F" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.616
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A2729F" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:31.618
+!MESSAGE XSCT Command: [fpga -file C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/EQ_27_band_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:33.983
+!MESSAGE XSCT command with result: [fpga -file C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/EQ_27_band_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:34.784
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:34.786
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:37.473
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:37.476
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:37.476
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:37.478
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:37.478
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:43:37.479
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:46:22.626
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:46:22.630
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:46:22.630
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:46:22.632
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:46:22.633
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:46:22.634
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:52:41.580
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:52:41.585
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:52:41.585
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:52:41.586
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:52:41.587
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:52:41.587
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:38.560
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:38.563
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:38.563
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:38.565
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:38.565
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:38.566
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:57.425
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:57.427
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:57.428
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:57.429
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:57.430
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:53:57.430
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:54:53.351
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:54:53.354
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:54:53.354
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:54:53.356
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:54:53.356
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:54:53.357
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:36.408
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:36.411
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:36.411
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:36.413
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:36.413
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:36.414
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:51.425
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:51.427
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:51.428
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:51.429
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:51.430
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:55:51.432
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:11.344
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:11.347
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:11.347
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:11.349
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:11.349
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:11.350
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:36.132
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:36.135
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:36.135
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:36.137
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:36.137
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:36.138
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:58.976
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:58.978
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:58.979
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:58.981
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_wrapper_hw_platform_0/system.hdf C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:58.981
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-02-03 16:59:58.982
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Zynq_Book/EQ_27_band/EQ_27_band.sdk/EQ_27_band_bsp/system.mss], Result: [null, ]. Thread: main

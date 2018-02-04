@@ -1,0 +1,11 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Zynq_Book/EQ_27_band/EQ_27_band.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sim_1/new/common_test_util.v,1516657293,verilog,,C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/new/i2s_receiver.v,,common_test_util,,,,,,,,
+C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sim_1/new/i2s_receiver_tb.v,1516659823,verilog,,,,i2s_receiver_tb,,,,,,,,
+C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/new/EQ_constants.vh,1516658616,verilog,,,,,,,,,,,,
+C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/new/i2s_receiver.v,1516664262,verilog,,C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sim_1/new/i2s_receiver_tb.v,C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/new/EQ_constants.vh,i2s_receiver,,,,,,,,
+C:/Zynq_Book/ip_repo/axi_i2s_receiver_1.0/src/axi_i2s_receiver_tb.v,1516680258,verilog,,,,axi_i2s_receiver_tb,,,,,,,,
+C:/Zynq_Book/ip_repo/axi_i2s_receiver_1.0/src/axi_i2s_receiver_v1_0.v,1516674140,verilog,,C:/Zynq_Book/ip_repo/axi_i2s_receiver_1.0/src/axi_i2s_receiver_tb.v,,axi_i2s_receiver_v1_0,,,,,,,,

@@ -1,0 +1,168 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xstatus.h"
+#include "xil_mmu.h"
+#include "xil_assert.h"
+#include "xil_io.h"
+
+#include "audio.h"
+#include "math.h"
+// Note: Must enter the 'm' character to the Project->Properties->Linker->Libraries (-l) section.
+//       If, during compiling, the trig functions show up as "not found" this has not been done.
+
+/* Definitions */
+#define GPIO_DEVICE_ID  XPAR_AXI_GPIO_0_DEVICE_ID	/* GPIO device that LEDs are connected to */
+#define LED 0xa5									/* Initial LED value - XX0000XX */
+#define LED_DELAY 100000000							/* Software delay length */
+#define LED_CHANNEL 1								/* GPIO port for LEDs */
+#define printf xil_printf							/* smaller, optimised printf */
+
+XGpio Gpio;											/* GPIO Device driver instance for LEDs */
+
+int Fs;
+float q0, f0, p, pi = 3.141592653;
+float t1, t2, t3, t4, t5, t6, t7, fn, q;
+float tb0, tb1, tb2, ta1, ta2;
+float b0, b1, b2, a1, a2;
+char str[100];
+int temp, i;
+
+int send_a1, send_a2, send_b1, send_b2;
+
+int filter1[4], filter2[4];
+
+
+int main()
+{
+    init_platform();
+
+    int Status;
+	int led = LED; /* Hold current LED value. Initialise to LED definition */
+//---------------  LEDS  --------------------------------------------------
+	/* GPIO driver initialisation */
+	Status = XGpio_Initialize(&Gpio, GPIO_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	/*Set the direction for the LEDs to output. */
+	XGpio_SetDataDirection(&Gpio, LED_CHANNEL, 0x00);
+	/* Write output to the LEDs. */
+	XGpio_DiscreteWrite(&Gpio, LED_CHANNEL, led);
+//--------------  END OF LEDS  ---------------------------------------------
+
+	xil_printf("Hello World\n\r");
+
+	xil_printf("Entering Main\r\n");
+	//Configure the IIC data structure
+	IicConfig(XPAR_XIICPS_0_DEVICE_ID);
+
+	//Configure the Audio Codec's PLL
+	AudioPllConfig();
+
+	//Configure the Line in and Line out ports.
+	//Call LineInLineOutConfig() for a configuration that
+	//enables the HP jack too.
+	AudioConfigureJacks();
+
+	xil_printf("ADAU1761 configured -----\n\r");
+
+	//% Enter sample frequency
+	Fs = 48000;
+	//% Enter q of the filter. Default = 4.3/3. Value of 1.0 = broader filter.
+	q0 = 4.3/3;
+	//% Enter center frequency of filter
+	f0 = 5000;
+	//% Enter gain. 1.0 = +6dB. -0.5 = -3 dB. 0.1 = +0.6 dB.
+	p = 0.001;
+
+	t1 = f0 * (1.0/(2.0*Fs));
+	fn = tan(2*pi*t1);
+	q = (2*pi)/fn;
+	q = q * t1;
+	q = log10(q)/log10(2);
+	q = q*1.6;
+	q = pow(2, q);
+	q = q*q0;
+
+	t1 = fn*fn;
+	t2 = t1-1;
+	t3 = t1+1;
+	t1 = fn/(2*q);
+	t4 = t1*(p-3);
+	t5 = t1*(p+3);
+	t6 = 1.0/(t3-t4);
+	t7 = 1.0 / (t3 + t5);
+
+	tb0 = (t3 + t5) * t6;
+	tb1 = -t2 * t6;
+	tb2 = -(t3+t4) * t6 * 0.5;
+	ta1 = t2 * t7;
+	ta2 = (t3-t5) * t7 * 0.5;
+/*
+	b1 = ta1*2;
+	b2 = ta2*2;
+	a1 = -tb1*2;
+	a2 = -tb2*2;
+*/
+	b1 = ta1;
+	b2 = ta2;
+	a1 = tb1;
+	a2 = tb2;
+
+	// Mute the audio flowing into the EQ
+	Xil_Out32( 0x43c00000, 0 );   // mute
+	Xil_Out32( 0x43c00004, 0 );   // set coefficients to 0.
+	Xil_Out32( 0x43c00008, 0 );
+	Xil_Out32( 0x43c0000c, 0 );
+	Xil_Out32( 0x43c00010, 0 );
+    //Xil_Out32( 0x43c00014, 0 );   // set coefficients to 0.
+	//Xil_Out32( 0x43c00018, 0 );
+	//Xil_Out32( 0x43c0001c, 0 );
+	//Xil_Out32( 0x43c00020, 0 );
+
+	xil_printf(" b1 = ");
+	sprintf(str, "%f", b1);
+	puts(str);
+	xil_printf(" b2 = ");
+	sprintf(str, "%f", b2);
+	puts(str);
+	xil_printf(" a1 = ");
+	sprintf(str, "%f", a1);
+	puts(str);
+	xil_printf(" a2 = ");
+	sprintf(str, "%f", a2);
+	puts(str);
+
+
+	// Now convert to fractional integers and send to the filter.
+    send_a1 = ( (signed int) (a1* 0x10000000) );
+    //xil_printf("send_a1 = %x\n\r", send_a1);
+    //send_a1 = 0;
+    Xil_Out32( 0x43c00004, send_a1 );
+
+    send_a2 = ( (signed int) (a2* 0x10000000) );
+    //xil_printf("send_a2 = %x\n\r", send_a2);
+    //send_a2 = 0;
+    Xil_Out32( 0x43c00008, send_a2 );
+
+    send_b1 = ( (signed int) (b1* 0x10000000) );
+    //xil_printf("send_b1 = %x\n\r", send_b1);
+    //send_b1 = 0;
+    Xil_Out32( 0x43c0000c, send_b1 );
+
+    send_b2 = ( (signed int) (b2* 0x10000000) );
+    //xil_printf("send_b2 = %x\n\r", send_b2);
+    //send_b2 = 0;
+    Xil_Out32( 0x43c00010, send_b2 );
+
+    // Unmute the audio flowing into the EQ
+    //xil_printf("Now unmuting.\n\r");
+    Xil_Out32( 0x43c00000, 0x1 );
+
+    cleanup_platform();
+    return 0;
+}

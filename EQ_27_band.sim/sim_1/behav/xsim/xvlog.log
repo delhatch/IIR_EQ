@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Zynq_Book/ip_repo/axi_i2s_receiver_1.0/src/axi_i2s_receiver_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_i2s_receiver_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Zynq_Book/ip_repo/axi_i2s_receiver_1.0/src/axi_i2s_receiver_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_i2s_receiver_tb
