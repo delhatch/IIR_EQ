@@ -576,7 +576,7 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>eq_core_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="eq_core" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:componentRef spirit:library="user" spirit:name="eq_core" spirit:vendor="xilinx.com" spirit:version="2.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">EQ_27_band_eq_core_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_S00_AXI_ADDR_WIDTH">7</spirit:configurableElementValue>
@@ -681,6 +681,7 @@
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_CLK2</spirit:name>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK2"/>
+        <spirit:internalPortReference spirit:componentRef="eq_core_0" spirit:portRef="iir_clk"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -697,6 +698,11 @@
         <spirit:activeInterface spirit:busRef="GPIO" spirit:componentRef="axi_gpio_0"/>
       </spirit:hierConnection>
     </spirit:hierConnections>
+    <spirit:vendorExtensions>
+      <bd:comments>
+        <bd:user_comments bd:name="comment_1" bd:path="/">CLK1 = 10 MHz</bd:user_comments>
+      </bd:comments>
+    </spirit:vendorExtensions>
   </spirit:design>
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">

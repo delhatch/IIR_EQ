@@ -21,8 +21,17 @@
 	)
 	(
 		// Users to add ports here
-		//input iir_clk,           // Clock for the IIR filter. Can go as high as ~80 MHz. I'm using 50 MHz to be on the safe side.
+		input iir_clk,           // Clock for the IIR filter. Can go as high as ~80 MHz. I'm using 50 MHz to be on the safe side.
         input lrclk,             // A low-to-high transition will signal that it is time to fetch and process the new L/R sample. 
+		
+		// BRAM Port. Connects to Port B of the BRAM block. (Port A connects to the BRAM controller block.)
+		output BRAM_RST,
+		output BRAM_EN,
+		output [15:0] BRAM_WE,
+		output [4:0] BRAM_ADDR,    // 30 bands. (L & R coefficients are the same.)
+		input [127:0] BRAM_DOUT,
+		output BRAM_CLK,			
+		
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -78,7 +87,7 @@
 		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
 		.C_S_AXI_ADDR_WIDTH(C_S00_AXI_ADDR_WIDTH)
 	) eq_core_v1_0_S00_AXI_inst (
-	    //.iir_clk( iir_clk ),
+	    .iir_clk( iir_clk ),
 	    .lrclk( lrclk ),
 	    .data_L_in( data_L_in ),     // Incoming audio, going into this module, for processing.
 	    .data_R_in( data_R_in ),
@@ -143,6 +152,14 @@
 	);
 
 	// Add user logic here.
+	
+	// Debug. Verify ARM writes show up on the BRAM data bus input as expected.
+	assign BRAM_CLK = iir_clk;
+	assign BRAM_EN = 1'b1;
+	assign BRAM_RST = ~s00_axi_aresetn;
+	assign BRAM_WE = 'd0;
+	assign BRAM_ADDR = 'd0;
+		
 //assign data_L_out = data_L_in;
 //assign data_R_out = data_R_in;
 	// User logic ends

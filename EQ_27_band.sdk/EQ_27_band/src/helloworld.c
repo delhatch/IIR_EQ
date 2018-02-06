@@ -63,7 +63,7 @@ int main()
 
 	xil_printf("ADAU1761 configured -----\n\r");
 
-	set_coef( &set1, 90, 1.5);
+	set_coef( &set1, 90, 2.0);
 
 	// Debug out to terminal.
 	xil_printf(" b1 = ");

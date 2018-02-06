@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sat Feb  3 11:58:15 2018
+| Date         : Tue Feb  6 10:14:44 2018
 | Host         : Del_Alienware running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file EQ_27_band_processing_system7_0_0_utilization_synth.rpt -pb EQ_27_band_processing_system7_0_0_utilization_synth.pb
 | Design       : EQ_27_band_processing_system7_0_0

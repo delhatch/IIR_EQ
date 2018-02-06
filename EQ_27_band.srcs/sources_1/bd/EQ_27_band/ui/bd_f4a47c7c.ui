@@ -1,5 +1,8 @@
 {
    ExpandedHierarchyInLayout: "",
+   comment_1: "CLK1 = 10 MHz",
+   commentid: "comment_1|",
+   font_comment_1: "15",
    guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
 preplace port DDR -pg 1 -y 80 -defaultsOSRD
@@ -20,23 +23,24 @@ preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 160 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 3 -y 190 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 3 2 N 80 NJ
 preplace netloc sdata_0_1 1 0 1 NJ
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 -90 560 280 510 560 640 1070
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 -90 350 NJ 350 NJ 350 1050J
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 -90 560 280 520 560 650 1090
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 -90 20 NJ 20 NJ 20 1060J
 preplace netloc processing_system7_0_IIC_0 1 3 2 N 120 NJ
-preplace netloc axi_i2s_transmitter_0_bclk 1 0 5 -100 650 N 650 NJ 650 1080J 520 1390
-preplace netloc axi_i2s_transmitter_0_lrclk 1 0 5 -90 380 N 380 570 380 NJ 380 1380
+preplace netloc axi_i2s_transmitter_0_bclk 1 0 5 -100 670 N 670 NJ 670 1110J 380 1380
+preplace netloc axi_i2s_transmitter_0_lrclk 1 0 5 -90 380 N 380 550 660 1120J 520 1380
 preplace netloc axi_i2s_transmitter_0_sdata_out 1 4 1 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 3 2 N 100 NJ
-preplace netloc S00_AXI_1 1 1 3 280 10 NJ 10 1050J
+preplace netloc S00_AXI_1 1 1 3 280 10 NJ 10 1070J
 preplace netloc axi_gpio_0_GPIO 1 4 1 NJ
 preplace netloc axi_interconnect_0_M00_AXI 1 2 1 560
-preplace netloc eq_core_0_m_axis 1 3 1 1080
-preplace netloc axi_i2s_receiver_0_M_AXIS 1 1 2 290 430 N
-preplace netloc axi_interconnect_0_M01_AXI 1 2 2 550 30 1070J
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 -110 70 270 310 580 360 1060
-preplace netloc processing_system7_0_FCLK_CLK1 1 3 2 1050 200 NJ
-preplace netloc processing_system7_0_FCLK_CLK2 1 3 1 N
+preplace netloc eq_core_0_m_axis 1 3 1 1100
+preplace netloc axi_i2s_receiver_0_M_AXIS 1 1 2 290 420 N
+preplace netloc axi_interconnect_0_M01_AXI 1 2 2 550 30 1090J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 -110 70 270 310 570 350 1080
+preplace netloc processing_system7_0_FCLK_CLK1 1 3 2 1070 200 NJ
+preplace netloc processing_system7_0_FCLK_CLK2 1 2 2 580 360 1050
 preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 260
+preplace cgraphic comment_1 place right -290 162 textcolor 4 linecolor 3 linewidth 2
 levelinfo -pg 1 -130 90 420 840 1260 1450 -top 0 -bot 760
 ",
 }
@@ -44,4 +48,7 @@ levelinfo -pg 1 -130 90 420 840 1260 1450 -top 0 -bot 760
    da_board_cnt: "2",
    da_clkrst_cnt: "6",
    da_ps7_cnt: "2",
+}
+{
+   /comment_1: "comment_1",
 }

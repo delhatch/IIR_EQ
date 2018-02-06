@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="EQ_27_band" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1517695677"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1517695677"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1517695677"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1517695677"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1517941238"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1517941238"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1517941238"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1517941238"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\EQ_27_band_axi_i2s_receiver_0_0\EQ_27_band_axi_i2s_receiver_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_i2s_receiver_0"/>

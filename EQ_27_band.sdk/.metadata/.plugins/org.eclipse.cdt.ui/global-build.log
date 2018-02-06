@@ -1,8 +1,8 @@
-20:22:56 **** Clean-only build of configuration Debug for project EQ_27_band ****
+10:26:37 **** Clean-only build of configuration Debug for project EQ_27_band ****
 make clean 
 rm -rf  ./src/audio.o ./src/helloworld.o ./src/platform.o  ./src/audio.d ./src/helloworld.d ./src/platform.d  EQ_27_band.elf.size  EQ_27_band.elf
 ' '
-20:22:56 **** Clean-only build of project EQ_27_band_bsp ****
+10:26:37 **** Clean-only build of project EQ_27_band_bsp ****
 make -k clean 
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s clean 
@@ -24,7 +24,7 @@ make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s clean
 make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
 rm -f ps7_cortexa9_0/lib/libxil.a
-20:22:57 **** Build of project EQ_27_band_bsp ****
+10:26:39 **** Build of project EQ_27_band_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
@@ -123,7 +123,7 @@ make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Compiling xadcps"
 'Finished building libraries'
-20:23:15 **** Build of configuration Debug for project EQ_27_band ****
+10:26:58 **** Build of configuration Debug for project EQ_27_band ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -150,75 +150,15 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size EQ_27_band.elf  |tee "EQ_27_band.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  91316	   2620	  23648	 117584	  1cb50	EQ_27_band.elf
+  91300	   2620	  23552	 117472	  1cae0	EQ_27_band.elf
 'Finished building: EQ_27_band.elf.size'
 ' '
-20:23:42 **** Incremental Build of configuration Debug for project EQ_27_band ****
+10:27:06 **** Incremental Build of configuration Debug for project EQ_27_band ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-20:25:32 **** Auto Build of configuration Debug for project EQ_27_band ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EQ_27_band_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: EQ_27_band.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EQ_27_band_bsp/ps7_cortexa9_0/lib -o "EQ_27_band.elf"  ./src/audio.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: EQ_27_band.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size EQ_27_band.elf  |tee "EQ_27_band.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  91316	   2620	  23648	 117584	  1cb50	EQ_27_band.elf
-'Finished building: EQ_27_band.elf.size'
-' '
-20:29:56 **** Auto Build of configuration Debug for project EQ_27_band ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EQ_27_band_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: EQ_27_band.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EQ_27_band_bsp/ps7_cortexa9_0/lib -o "EQ_27_band.elf"  ./src/audio.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: EQ_27_band.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size EQ_27_band.elf  |tee "EQ_27_band.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  91316	   2620	  23648	 117584	  1cb50	EQ_27_band.elf
-'Finished building: EQ_27_band.elf.size'
-' '
-20:30:57 **** Auto Build of configuration Debug for project EQ_27_band ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EQ_27_band_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: EQ_27_band.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EQ_27_band_bsp/ps7_cortexa9_0/lib -o "EQ_27_band.elf"  ./src/audio.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: EQ_27_band.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size EQ_27_band.elf  |tee "EQ_27_band.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  91316	   2620	  23552	 117488	  1caf0	EQ_27_band.elf
-'Finished building: EQ_27_band.elf.size'
-' '
-20:31:23 **** Auto Build of configuration Debug for project EQ_27_band ****
+10:27:34 **** Auto Build of configuration Debug for project EQ_27_band ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -238,3 +178,8 @@ arm-none-eabi-size EQ_27_band.elf  |tee "EQ_27_band.elf.size"
   91300	   2620	  23552	 117472	  1cae0	EQ_27_band.elf
 'Finished building: EQ_27_band.elf.size'
 ' '
+10:27:39 **** Incremental Build of configuration Debug for project EQ_27_band ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

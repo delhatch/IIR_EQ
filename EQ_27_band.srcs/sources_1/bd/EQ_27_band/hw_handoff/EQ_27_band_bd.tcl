@@ -110,6 +110,9 @@ if { ${design_name} eq "" } {
 
 }
 
+  # Add USER_COMMENTS on $design_name
+  set_property USER_COMMENTS.comment_1 "CLK1 = 10 MHz" [get_bd_designs $design_name]
+
 common::send_msg_id "BD_TCL-005" "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
 
 if { $nRet != 0 } {
@@ -193,7 +196,7 @@ proc create_root_design { parentCell } {
   set axi_interconnect_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 ]
 
   # Create instance: eq_core_0, and set properties
-  set eq_core_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:eq_core:1.0 eq_core_0 ]
+  set eq_core_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:eq_core:2.0 eq_core_0 ]
   set_property -dict [ list \
    CONFIG.C_S00_AXI_ADDR_WIDTH {7} \
  ] $eq_core_0
@@ -632,7 +635,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net axi_i2s_transmitter_0_sdata_out [get_bd_ports SDATA_O] [get_bd_pins axi_i2s_transmitter_0/sdata_out]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_i2s_receiver_0/m_axis_aclk] [get_bd_pins axi_i2s_transmitter_0/s_axis_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins eq_core_0/m_axis_aclk] [get_bd_pins eq_core_0/s00_axi_aclk] [get_bd_pins eq_core_0/s_axis_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_CLK1 [get_bd_ports FCLK_CLK1] [get_bd_pins processing_system7_0/FCLK_CLK1]
-  connect_bd_net -net processing_system7_0_FCLK_CLK2 [get_bd_pins processing_system7_0/FCLK_CLK2]
+  connect_bd_net -net processing_system7_0_FCLK_CLK2 [get_bd_pins eq_core_0/iir_clk] [get_bd_pins processing_system7_0/FCLK_CLK2]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_100M_interconnect_aresetn [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins rst_ps7_0_100M/interconnect_aresetn]
   connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_i2s_receiver_0/m_axis_aresetn] [get_bd_pins axi_i2s_transmitter_0/s_axis_aresetn] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins eq_core_0/m_axis_aresetn] [get_bd_pins eq_core_0/s00_axi_aresetn] [get_bd_pins eq_core_0/s_axis_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]

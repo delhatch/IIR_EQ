@@ -52,7 +52,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 650.082 ; gain = 367.891
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 650.172 ; gain = 367.941
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -63,7 +63,7 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.628 . Memory (MB): peak = 656.934 ; gain = 6.852
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.616 . Memory (MB): peak = 655.875 ; gain = 5.703
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_EQ_27_band_i/axi_i2s_transmitter_0/inst/out[0]' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/constrs_1/new/clock_constraints.xdc:2]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
@@ -72,59 +72,59 @@ Starting Logic Optimization Task
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1bc5efa12
+Phase 1 Retarget | Checksum: 16bbda0cc
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.551 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.530 . Memory (MB): peak = 1187.879 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 18 cells and removed 49 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 2155f9662
+Phase 2 Constant propagation | Checksum: 141bfcfc2
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.672 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.649 . Memory (MB): peak = 1187.879 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 1 cells and removed 57 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 24219ffcf
+Phase 3 Sweep | Checksum: 11bea26ef
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1187.453 ; gain = 0.000
-INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 263 cells
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1187.879 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 262 cells
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-194] Inserted BUFG EQ_27_band_i/axi_i2s_transmitter_0/inst/out[0]_BUFG_inst to drive 107 load(s) on clock net BCLK_OBUF
 INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: 1f9bdac24
+Phase 4 BUFG optimization | Checksum: 10d1c4c2c
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1187.879 ; gain = 0.000
 INFO: [Opt 31-389] Phase BUFG optimization created 1 cells and removed 0 cells
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: 1f9bdac24
+Phase 5 Shift Register Optimization | Checksum: 10d1c4c2c
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1187.879 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1187.453 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1b6c05acd
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1187.879 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 18bc2a07e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1187.879 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 19c498fad
+Ending Power Optimization Task | Checksum: 24f752e22
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1187.879 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1187.453 ; gain = 537.371
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1187.879 ; gain = 537.707
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1187.879 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/impl_1/EQ_27_band_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file EQ_27_band_wrapper_drc_opted.rpt -pb EQ_27_band_wrapper_drc_opted.pb -rpx EQ_27_band_wrapper_drc_opted.rpx
 Command: report_drc -file EQ_27_band_wrapper_drc_opted.rpt -pb EQ_27_band_wrapper_drc_opted.pb -rpx EQ_27_band_wrapper_drc_opted.rpx
@@ -152,94 +152,94 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1187.453 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f3577947
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1187.879 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 186ee816b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1187.879 ; gain = 0.000
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_EQ_27_band_i/axi_i2s_transmitter_0/inst/out[0]' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/constrs_1/new/clock_constraints.xdc:2]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1187.879 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_EQ_27_band_i/axi_i2s_transmitter_0/inst/out[0]' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/constrs_1/new/clock_constraints.xdc:2]
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 4196a47e
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 25dbc46d
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1187.453 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1187.879 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: a18a3260
+Phase 1.3 Build Placer Netlist Model | Checksum: 1329745d9
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: a18a3260
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1329745d9
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.277 ; gain = 1.824
-Phase 1 Placer Initialization | Checksum: a18a3260
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1189.488 ; gain = 1.609
+Phase 1 Placer Initialization | Checksum: 1329745d9
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 1efd35186
+Phase 2 Global Placement | Checksum: 13f852a38
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1efd35186
+Phase 3.1 Commit Multi Column Macros | Checksum: 13f852a38
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 164dad086
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 14c9643d4
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 17b9148f7
+Phase 3.3 Area Swap Optimization | Checksum: 1b065e58a
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1cc1e0d7b
+Phase 3.4 Pipeline Register Optimization | Checksum: 1a867a3dc
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1cc1e0d7b
+Phase 3.5 Timing Path Optimizer | Checksum: 1a867a3dc
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 12433d5eb
+Phase 3.6 Fast Optimization | Checksum: 2174967f7
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.7 Small Shape Detail Placement
-Phase 3.7 Small Shape Detail Placement | Checksum: 18c58d8ce
+Phase 3.7 Small Shape Detail Placement | Checksum: 1b5b54df6
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 1d8e2f36d
+Phase 3.8 Re-assign LUT pins | Checksum: 1d38022f2
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: 1d8e2f36d
+Phase 3.9 Pipeline Register Optimization | Checksum: 1d38022f2
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 3.10 Fast Optimization
-Phase 3.10 Fast Optimization | Checksum: 18d1f9bb8
+Phase 3.10 Fast Optimization | Checksum: 1b5dfa7b4
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1189.277 ; gain = 1.824
-Phase 3 Detail Placement | Checksum: 18d1f9bb8
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1189.488 ; gain = 1.609
+Phase 3 Detail Placement | Checksum: 1b5dfa7b4
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1189.277 ; gain = 1.824
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1189.488 ; gain = 1.609
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -248,58 +248,58 @@ INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as o
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 195c21683
+Post Placement Optimization Initialization | Checksum: 102e88566
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
 INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 195c21683
+Phase 4.1.1.1 BUFG Insertion | Checksum: 102e88566
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1221.664 ; gain = 34.211
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-6.803. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 14f5ad45c
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1220.816 ; gain = 32.938
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-7.837. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 123f1bb56
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1221.664 ; gain = 34.211
-Phase 4.1 Post Commit Optimization | Checksum: 14f5ad45c
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1220.816 ; gain = 32.938
+Phase 4.1 Post Commit Optimization | Checksum: 123f1bb56
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1221.664 ; gain = 34.211
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1220.816 ; gain = 32.938
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 14f5ad45c
+Phase 4.2 Post Placement Cleanup | Checksum: 123f1bb56
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1221.664 ; gain = 34.211
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1220.816 ; gain = 32.938
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 14f5ad45c
+Phase 4.3 Placer Reporting | Checksum: 123f1bb56
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1221.664 ; gain = 34.211
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1220.816 ; gain = 32.938
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 103f467fb
+Phase 4.4 Final Placement Cleanup | Checksum: ee3b8a2c
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1221.664 ; gain = 34.211
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 103f467fb
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1220.816 ; gain = 32.938
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: ee3b8a2c
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1221.664 ; gain = 34.211
-Ending Placer Task | Checksum: fc1887cc
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1220.816 ; gain = 32.938
+Ending Placer Task | Checksum: 8f07ae78
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1221.664 ; gain = 34.211
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1220.816 ; gain = 32.938
 INFO: [Common 17-83] Releasing license: Implementation
 64 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:35 . Memory (MB): peak = 1221.664 ; gain = 34.211
+place_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1220.816 ; gain = 32.938
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.405 . Memory (MB): peak = 1221.973 ; gain = 0.305
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.368 . Memory (MB): peak = 1221.125 ; gain = 0.305
 INFO: [Common 17-1381] The checkpoint 'C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/impl_1/EQ_27_band_wrapper_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file EQ_27_band_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1226.504 ; gain = 4.531
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1225.656 ; gain = 4.531
 INFO: [runtcl-4] Executing : report_utilization -file EQ_27_band_wrapper_utilization_placed.rpt -pb EQ_27_band_wrapper_utilization_placed.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1226.504 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1225.656 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file EQ_27_band_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1226.504 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1225.656 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -311,120 +311,131 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: e1ecec8d ConstDB: 0 ShapeSum: 1a2b9b3f RouteDB: 0
+Checksum: PlaceDB: 57eec93d ConstDB: 0 ShapeSum: 3718e53b RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: f28f944e
+Phase 1 Build RT Design | Checksum: 199609d80
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1349.828 ; gain = 120.637
-Post Restoration Checksum: NetGraph: ecd3713a NumContArr: 5bc2314 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1351.953 ; gain = 123.617
+Post Restoration Checksum: NetGraph: aa8a1257 NumContArr: eed68b29 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: f28f944e
+Phase 2.1 Create Timer | Checksum: 199609d80
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1349.828 ; gain = 120.637
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1351.953 ; gain = 123.617
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: f28f944e
+Phase 2.2 Fix Topology Constraints | Checksum: 199609d80
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1349.828 ; gain = 120.637
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1351.953 ; gain = 123.617
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: f28f944e
+Phase 2.3 Pre Route Cleanup | Checksum: 199609d80
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1349.828 ; gain = 120.637
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1351.953 ; gain = 123.617
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 23ae18408
+Phase 2.4 Update Timing | Checksum: 16be4f2d2
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:35 . Memory (MB): peak = 1362.891 ; gain = 133.699
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.755 | TNS=-404.724| WHS=-6.869 | THS=-142.503|
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 1365.746 ; gain = 137.410
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.752 | TNS=-4414.251| WHS=-6.672 | THS=-1119.666|
 
-Phase 2 Router Initialization | Checksum: 193fd849a
+Phase 2 Router Initialization | Checksum: 182d02ec5
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 1379.973 ; gain = 150.781
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1384.895 ; gain = 156.559
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 12b626583
+Phase 3 Initial Routing | Checksum: 2c2107518
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:36 . Memory (MB): peak = 1379.973 ; gain = 150.781
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:08 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 340
- Number of Nodes with overlaps = 54
- Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 326
+ Number of Nodes with overlaps = 66
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 4
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.306| TNS=-400.449| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.913| TNS=-6112.821| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: ebe4eb03
+Phase 4.1 Global Iteration 0 | Checksum: f313d955
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:38 . Memory (MB): peak = 1379.973 ; gain = 150.781
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:22 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 25
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 4
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.306| TNS=-407.038| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-11.387| TNS=-6211.476| WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 14606bef9
+Phase 4.2 Global Iteration 1 | Checksum: 12f45084f
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:38 . Memory (MB): peak = 1379.973 ; gain = 150.781
-Phase 4 Rip-up And Reroute | Checksum: 14606bef9
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:23 . Memory (MB): peak = 1422.551 ; gain = 194.215
+Phase 4 Rip-up And Reroute | Checksum: 12f45084f
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:38 . Memory (MB): peak = 1379.973 ; gain = 150.781
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:23 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1c257d695
+Phase 5.1.1 Update Timing | Checksum: 1cc09b03b
 
-Time (s): cpu = 00:00:46 ; elapsed = 00:00:38 . Memory (MB): peak = 1379.973 ; gain = 150.781
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.306| TNS=-396.279| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:23 . Memory (MB): peak = 1422.551 ; gain = 194.215
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.913| TNS=-6112.821| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 1abbdfb24
+Phase 5.1 Delay CleanUp | Checksum: 2041e0899
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:23 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1abbdfb24
+Phase 5.2 Clock Skew Optimization | Checksum: 2041e0899
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
-Phase 5 Delay and Skew Optimization | Checksum: 1abbdfb24
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:23 . Memory (MB): peak = 1422.551 ; gain = 194.215
+Phase 5 Delay and Skew Optimization | Checksum: 2041e0899
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:23 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: f0115138
+Phase 6.1.1 Update Timing | Checksum: 2a915acd3
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.306| TNS=-388.908| WHS=-6.361 | THS=-6.361 |
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:23 . Memory (MB): peak = 1422.551 ; gain = 194.215
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.913| TNS=-6104.045| WHS=-6.389 | THS=-190.410|
 
-Phase 6.1 Hold Fix Iter | Checksum: 1c6b1892f
+Phase 6.1 Hold Fix Iter | Checksum: 248b97c41
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
-WARNING: [Route 35-468] The router encountered 1 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
-	LRCLK_OBUF_inst/I
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:24 . Memory (MB): peak = 1422.551 ; gain = 194.215
+WARNING: [Route 35-468] The router encountered 821 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[14]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[15]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[16]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[17]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[13]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[12]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[11]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[10]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[9]
+	EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[8]
+	.. and 811 more pins.
 
-Phase 6 Post Hold Fix | Checksum: 1be9e44b0
+Phase 6 Post Hold Fix | Checksum: 1ccaccfb5
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:24 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.34462 %
-  Global Horizontal Routing Utilization  = 2.56837 %
+  Global Vertical Routing Utilization    = 2.50497 %
+  Global Horizontal Routing Utilization  = 2.82995 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -435,53 +446,53 @@ Router Utilization Summary
 
 Utilization threshold used for congestion level computation: 0.85
 Congestion Report
-North Dir 1x1 Area, Max Cong = 63.964%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 39.6396%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 65.7658%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 64.8649%, No Congested Regions.
 East Dir 1x1 Area, Max Cong = 77.9412%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 64.7059%, No Congested Regions.
-Phase 7 Route finalize | Checksum: 1b76044ab
+West Dir 1x1 Area, Max Cong = 73.5294%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 26b40c27f
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:24 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1b76044ab
+Phase 8 Verifying routed nets | Checksum: 26b40c27f
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:24 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 112562f5a
+Phase 9 Depositing Routes | Checksum: 224a8a3ce
 
-Time (s): cpu = 00:00:49 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:24 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Phase 10 Post Router Timing
 
 Phase 10.1 Update Timing
-Phase 10.1 Update Timing | Checksum: 13bc4f4e9
+Phase 10.1 Update Timing | Checksum: 1fa355898
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-10.306| TNS=-388.908| WHS=0.057  | THS=0.000  |
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:24 . Memory (MB): peak = 1422.551 ; gain = 194.215
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-10.913| TNS=-6104.680| WHS=0.069  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 13bc4f4e9
+Phase 10 Post Router Timing | Checksum: 1fa355898
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:24 . Memory (MB): peak = 1422.551 ; gain = 194.215
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:40 . Memory (MB): peak = 1404.363 ; gain = 175.172
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:24 . Memory (MB): peak = 1422.551 ; gain = 194.215
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 81 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:42 . Memory (MB): peak = 1404.363 ; gain = 177.859
+route_design: Time (s): cpu = 00:02:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1422.551 ; gain = 196.895
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.544 . Memory (MB): peak = 1404.363 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.502 . Memory (MB): peak = 1422.551 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/impl_1/EQ_27_band_wrapper_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file EQ_27_band_wrapper_drc_routed.rpt -pb EQ_27_band_wrapper_drc_routed.pb -rpx EQ_27_band_wrapper_drc_routed.rpx
 Command: report_drc -file EQ_27_band_wrapper_drc_routed.rpt -pb EQ_27_band_wrapper_drc_routed.pb -rpx EQ_27_band_wrapper_drc_routed.rpx
@@ -521,86 +532,54 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__0 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__1 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__2 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__3 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__4 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__5 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__6 input EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__0 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__1 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__2 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__3 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__4 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__5 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__6 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__0 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__1 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__2 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__3 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__4 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__5 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__6 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__0 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__1 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__2 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__3 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__4 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__5 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__6 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__0 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__1 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__2 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__3 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__4 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__5 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__0 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__1 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
@@ -617,22 +596,22 @@ WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__4 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__5 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__6 output EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__0 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__1 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__2 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__3 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__4 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__5 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__6 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz03__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__0 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__1 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__2 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__3 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__4 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__5 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__6 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz03__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__0 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__1 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__2 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__3 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__4 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__5 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__6 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Lz13__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__0 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__1 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__2 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__3 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__4 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__5 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/Rz13__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__0 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__1 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_L_out4__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
@@ -649,7 +628,7 @@ WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__4 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__5 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__6 multiplier stage EQ_27_band_i/eq_core_0/inst/eq_core_v1_0_S00_AXI_inst/data_R_out4__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 128 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 96 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
@@ -662,9 +641,9 @@ Creating bitstream...
 Writing bitstream ./EQ_27_band_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] 'C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat Feb  3 14:12:30 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Feb  6 10:25:33 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-114 Infos, 130 Warnings, 1 Critical Warnings and 0 Errors encountered.
+114 Infos, 98 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 1814.668 ; gain = 410.305
-INFO: [Common 17-206] Exiting Vivado at Sat Feb  3 14:12:30 2018...
+write_bitstream: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1826.742 ; gain = 404.191
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  6 10:25:33 2018...

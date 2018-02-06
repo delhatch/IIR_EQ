@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sat Feb  3 14:12:08 2018
+| Date             : Tue Feb  6 10:25:09 2018
 | Host             : Del_Alienware running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file EQ_27_band_wrapper_power_routed.rpt -pb EQ_27_band_wrapper_power_summary_routed.pb -rpx EQ_27_band_wrapper_power_routed.rpx
 | Design           : EQ_27_band_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.690        |
+| Total On-Chip Power (W)  | 1.694        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.545        |
+| Dynamic (W)              | 1.550        |
 | Device Static (W)        | 0.145        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.5         |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.007 |        7 |       --- |             --- |
-| Slice Logic             |     0.002 |     3490 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1240 |     53200 |            2.33 |
+| Slice Logic             |     0.002 |     3545 |       --- |             --- |
+|   LUT as Logic          |     0.002 |     1231 |     53200 |            2.31 |
 |   CARRY4                |    <0.001 |      130 |     13300 |            0.98 |
-|   Register              |    <0.001 |     1593 |    106400 |            1.50 |
+|   Register              |    <0.001 |     1658 |    106400 |            1.56 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
 |   Others                |     0.000 |      220 |       --- |             --- |
-| Signals                 |     0.004 |     4097 |       --- |             --- |
-| DSPs                    |     0.000 |       32 |       220 |           14.55 |
+| Signals                 |     0.008 |     4230 |       --- |             --- |
+| DSPs                    |    <0.001 |       32 |       220 |           14.55 |
 | I/O                     |     0.003 |       15 |       200 |            7.50 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.145 |          |           |                 |
-| Total                   |     1.690 |          |           |                 |
+| Total                   |     1.694 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.028 |       0.013 |      0.015 |
+| Vccint    |       1.000 |     0.032 |       0.017 |      0.015 |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,6 +140,7 @@ Table of Contents
 | EQ_27_band_i/axi_i2s_transmitter_0/inst/out[0] | EQ_27_band_i/axi_i2s_transmitter_0/inst/out[0]                |           320.0 |
 | clk_fpga_0                                     | EQ_27_band_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            10.0 |
 | clk_fpga_1                                     | EQ_27_band_i/processing_system7_0/inst/FCLK_CLK1              |           100.0 |
+| clk_fpga_2                                     | EQ_27_band_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2] |           100.0 |
 +------------------------------------------------+---------------------------------------------------------------+-----------------+
 
 
@@ -152,8 +153,8 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| EQ_27_band_wrapper                               |     1.545 |
-|   EQ_27_band_i                                   |     1.542 |
+| EQ_27_band_wrapper                               |     1.550 |
+|   EQ_27_band_i                                   |     1.547 |
 |     axi_gpio_0                                   |    <0.001 |
 |       U0                                         |    <0.001 |
 |         AXI_LITE_IPIF_I                          |    <0.001 |
@@ -166,7 +167,7 @@ Table of Contents
 |           my_receiver                            |    <0.001 |
 |     axi_i2s_transmitter_0                        |     0.001 |
 |       inst                                       |     0.001 |
-|         audio_transmitter_S_AXIS_inst            |     0.001 |
+|         audio_transmitter_S_AXIS_inst            |    <0.001 |
 |           my_xmitter                             |    <0.001 |
 |     axi_interconnect_0                           |     0.006 |
 |       s00_couplers                               |     0.005 |
@@ -202,11 +203,11 @@ Table of Contents
 |             reg_slice_r                          |    <0.001 |
 |             splitter_ar                          |    <0.001 |
 |             splitter_aw                          |    <0.001 |
-|     eq_core_0                                    |     0.004 |
-|       inst                                       |     0.004 |
+|     eq_core_0                                    |     0.008 |
+|       inst                                       |     0.008 |
 |         audio_receiver_S_AXIS_inst               |    <0.001 |
 |         audio_sender_M_AXIS_inst                 |    <0.001 |
-|         eq_core_v1_0_S00_AXI_inst                |     0.004 |
+|         eq_core_v1_0_S00_AXI_inst                |     0.007 |
 |     processing_system7_0                         |     1.530 |
 |       inst                                       |     1.530 |
 |     rst_ps7_0_100M                               |    <0.001 |

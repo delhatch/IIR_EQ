@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Feb  3 14:08:02 2018
-# Process ID: 10528
+# Start of session at: Tue Feb  6 10:10:21 2018
+# Process ID: 3620
 # Current directory: C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/EQ_27_band_eq_core_0_0_synth_1
 # Command line: vivado.exe -log EQ_27_band_eq_core_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source EQ_27_band_eq_core_0_0.tcl
 # Log file: C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/EQ_27_band_eq_core_0_0_synth_1/EQ_27_band_eq_core_0_0.vds
@@ -15,37 +15,33 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4072 
+INFO: Helper process launched with PID 7280 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 362.129 ; gain = 98.051
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 361.441 ; gain = 98.211
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'EQ_27_band_eq_core_0_0' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ip/EQ_27_band_eq_core_0_0/synth/EQ_27_band_eq_core_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'eq_core' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core.v:4]
+INFO: [Synth 8-638] synthesizing module 'eq_core' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core.v:4]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_START_COUNT bound to: 32 - type: integer 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'eq_core_v1_0_S00_AXI' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:4]
-	Parameter DIV_FACTOR bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'eq_core_v1_0_S00_AXI' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:534]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:553]
-WARNING: [Synth 8-5788] Register reset_go_reg in module eq_core_v1_0_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:554]
-WARNING: [Synth 8-5788] Register data_R_out_reg in module eq_core_v1_0_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:562]
-WARNING: [Synth 8-5788] Register data_L_out_reg in module eq_core_v1_0_S00_AXI is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:563]
-INFO: [Synth 8-256] done synthesizing module 'eq_core_v1_0_S00_AXI' (1#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-638] synthesizing module 'audio_receiver_S_AXIS' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/audio_receiver_S_AXIS.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:498]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:513]
+INFO: [Synth 8-256] done synthesizing module 'eq_core_v1_0_S00_AXI' (1#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'audio_receiver_S_AXIS' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/audio_receiver_S_AXIS.v:4]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter NUMBER_OF_INPUT_WORDS bound to: 8 - type: integer 
 	Parameter bit_num bound to: 3 - type: integer 
 	Parameter IDLE bound to: 2'b00 
 	Parameter WRITE_FIFO bound to: 2'b01 
-INFO: [Synth 8-256] done synthesizing module 'audio_receiver_S_AXIS' (2#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/audio_receiver_S_AXIS.v:4]
-INFO: [Synth 8-638] synthesizing module 'audio_sender_M_AXIS' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/audio_sender_M_AXIS.v:3]
+INFO: [Synth 8-256] done synthesizing module 'audio_receiver_S_AXIS' (2#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/audio_receiver_S_AXIS.v:4]
+INFO: [Synth 8-638] synthesizing module 'audio_sender_M_AXIS' [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/audio_sender_M_AXIS.v:3]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
 	Parameter NUMBER_OF_OUTPUT_WORDS bound to: 2 - type: integer 
@@ -54,9 +50,9 @@ INFO: [Synth 8-638] synthesizing module 'audio_sender_M_AXIS' [c:/Zynq_Book/EQ_2
 	Parameter IDLE bound to: 2'b00 
 	Parameter INIT_COUNTER bound to: 2'b01 
 	Parameter SEND_STREAM bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/audio_sender_M_AXIS.v:106]
-INFO: [Synth 8-256] done synthesizing module 'audio_sender_M_AXIS' (3#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/audio_sender_M_AXIS.v:3]
-INFO: [Synth 8-256] done synthesizing module 'eq_core' (4#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/audio_sender_M_AXIS.v:106]
+INFO: [Synth 8-256] done synthesizing module 'audio_sender_M_AXIS' (3#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/audio_sender_M_AXIS.v:3]
+INFO: [Synth 8-256] done synthesizing module 'eq_core' (4#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core.v:4]
 INFO: [Synth 8-256] done synthesizing module 'EQ_27_band_eq_core_0_0' (5#1) [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ip/EQ_27_band_eq_core_0_0/synth/EQ_27_band_eq_core_0_0.v:57]
 WARNING: [Synth 8-3331] design audio_receiver_S_AXIS has unconnected port S_AXIS_TSTRB[3]
 WARNING: [Synth 8-3331] design audio_receiver_S_AXIS has unconnected port S_AXIS_TSTRB[2]
@@ -100,8 +96,67 @@ WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_A
 WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
 WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[127]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[126]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[125]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[124]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[123]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[122]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[121]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[120]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[119]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[118]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[117]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[116]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[115]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[114]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[113]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[112]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[111]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[110]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[109]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[108]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[107]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[106]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[105]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[104]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[103]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[102]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[101]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[100]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[99]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[98]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[97]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[96]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[95]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[94]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[93]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[92]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[91]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[90]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[89]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[88]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[87]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[86]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[85]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[84]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[83]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[82]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[81]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[80]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[79]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[78]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[77]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[76]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[75]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[74]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[73]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[72]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[71]
+WARNING: [Synth 8-3331] design eq_core has unconnected port BRAM_DOUT[70]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 411.719 ; gain = 147.641
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 411.293 ; gain = 148.063
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -111,7 +166,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 411.719 ; gain = 147.641
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 411.293 ; gain = 148.063
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -123,27 +178,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 760.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 760.262 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 760.840 ; gain = 496.762
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 760.262 ; gain = 497.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 760.840 ; gain = 496.762
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 760.262 ; gain = 497.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 760.840 ; gain = 496.762
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 760.262 ; gain = 497.031
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5544] ROM "max_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Rz1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "read_pointer" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 760.840 ; gain = 496.762
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 760.262 ; gain = 497.031
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -158,26 +213,21 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     36 Bit       Adders := 2     
 	   3 Input     32 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               36 Bit    Registers := 6     
+	               36 Bit    Registers := 4     
 	               32 Bit    Registers := 14    
 	                7 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 18    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
 +---Multipliers : 
 	                32x36  Multipliers := 8     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 10    
 	  10 Input     32 Bit        Muxes := 9     
-	   2 Input      4 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
 	   7 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 11    
-	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
 	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -191,23 +241,18 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     36 Bit       Adders := 2     
 	   3 Input     32 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	               36 Bit    Registers := 6     
+	               36 Bit    Registers := 4     
 	               32 Bit    Registers := 12    
 	                7 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
-	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 9     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
 +---Multipliers : 
 	                32x36  Multipliers := 8     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 9     
 	  10 Input     32 Bit        Muxes := 9     
-	   2 Input      4 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 9     
-	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
 Module audio_receiver_S_AXIS 
 Detailed RTL Component Info : 
 +---XORs : 
@@ -242,157 +287,237 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:578]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:577]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:583]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:582]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:575]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:574]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:581]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:580]
-DSP Report: Generating DSP Lz03, operation Mode is: A*B.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: Generating DSP Lz03, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: Generating DSP Lz03, operation Mode is: A*B.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: Generating DSP Lz03, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: Generating DSP Lz03, operation Mode is: A*B.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: Generating DSP Lz03, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: Generating DSP Lz03, operation Mode is: A*B.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: Generating DSP Lz03, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: operator Lz03 is absorbed into DSP Lz03.
-DSP Report: Generating DSP data_L_out4, operation Mode is: A*B.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:531]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:530]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:536]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:535]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:528]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:527]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:534]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:533]
+WARNING: [Synth 8-6014] Unused sequential element Lz2_reg was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:510]
+WARNING: [Synth 8-6014] Unused sequential element Lz1_reg was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:509]
+WARNING: [Synth 8-6014] Unused sequential element Rz2_reg was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:508]
+WARNING: [Synth 8-6014] Unused sequential element Rz1_reg was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:507]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:531]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:531]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:530]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:530]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:530]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:530]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:536]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:536]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:535]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:535]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:535]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:535]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:528]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:528]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:527]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:527]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:527]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:527]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:534]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:534]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:533]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:533]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:533]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v:533]
+DSP Report: Generating DSP Lz13, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: Generating DSP Lz13, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: Generating DSP Lz13, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: Generating DSP Lz13, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: Generating DSP Lz13, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: Generating DSP Lz13, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: Generating DSP Lz13, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: Generating DSP Lz13, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: register A is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: operator Lz13 is absorbed into DSP Lz13.
+DSP Report: Generating DSP data_L_out4, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
-DSP Report: Generating DSP data_L_out4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP data_L_out4, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
-DSP Report: Generating DSP data_L_out4, operation Mode is: A*B.
+DSP Report: Generating DSP data_L_out4, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
-DSP Report: Generating DSP data_L_out4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP data_L_out4, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
-DSP Report: Generating DSP data_L_out4, operation Mode is: A*B.
+DSP Report: Generating DSP data_L_out4, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP data_L_out4.
+DSP Report: register A is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
-DSP Report: Generating DSP data_L_out4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP data_L_out4, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP data_L_out4.
+DSP Report: register A is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
-DSP Report: Generating DSP data_L_out4, operation Mode is: A*B.
+DSP Report: Generating DSP data_L_out4, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP data_L_out4.
+DSP Report: register A is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
-DSP Report: Generating DSP data_L_out4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP data_L_out4, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP data_L_out4.
+DSP Report: register A is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
 DSP Report: operator data_L_out4 is absorbed into DSP data_L_out4.
-DSP Report: Generating DSP Rz03, operation Mode is: A*B.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: Generating DSP Rz03, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: Generating DSP Rz03, operation Mode is: A*B.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: Generating DSP Rz03, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: Generating DSP Rz03, operation Mode is: A*B.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: Generating DSP Rz03, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: Generating DSP Rz03, operation Mode is: A*B.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: Generating DSP Rz03, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: operator Rz03 is absorbed into DSP Rz03.
-DSP Report: Generating DSP data_R_out4, operation Mode is: A*B.
+DSP Report: Generating DSP Rz13, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: Generating DSP Rz13, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: Generating DSP Rz13, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: Generating DSP Rz13, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: Generating DSP Rz13, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: Generating DSP Rz13, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: Generating DSP Rz13, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: Generating DSP Rz13, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: register A is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: operator Rz13 is absorbed into DSP Rz13.
+DSP Report: Generating DSP data_R_out4, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
-DSP Report: Generating DSP data_R_out4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP data_R_out4, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
-DSP Report: Generating DSP data_R_out4, operation Mode is: A*B.
+DSP Report: Generating DSP data_R_out4, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
-DSP Report: Generating DSP data_R_out4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP data_R_out4, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
-DSP Report: Generating DSP data_R_out4, operation Mode is: A*B.
+DSP Report: Generating DSP data_R_out4, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP data_R_out4.
+DSP Report: register A is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
-DSP Report: Generating DSP data_R_out4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP data_R_out4, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP data_R_out4.
+DSP Report: register A is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
-DSP Report: Generating DSP data_R_out4, operation Mode is: A*B.
+DSP Report: Generating DSP data_R_out4, operation Mode is: A''*B.
+DSP Report: register A is absorbed into DSP data_R_out4.
+DSP Report: register A is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
-DSP Report: Generating DSP data_R_out4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP data_R_out4, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP data_R_out4.
+DSP Report: register A is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
 DSP Report: operator data_R_out4 is absorbed into DSP data_R_out4.
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_EN driven by constant 1
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[15] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[14] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[13] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[12] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[11] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[10] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[9] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[8] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[7] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[6] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[5] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[4] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[3] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[2] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[1] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_WE[0] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_ADDR[4] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_ADDR[3] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_ADDR[2] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_ADDR[1] driven by constant 0
+INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port BRAM_ADDR[0] driven by constant 0
 INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port m_axis_tvalid driven by constant 1
 INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port m_axis_tstrb[3] driven by constant 1
 INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port m_axis_tstrb[2] driven by constant 1
 INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port m_axis_tstrb[1] driven by constant 1
 INFO: [Synth 8-3917] design EQ_27_band_eq_core_0_0 has port m_axis_tstrb[0] driven by constant 1
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[15]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[14]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[13]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[12]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[11]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[10]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[9]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[8]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[7]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[6]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[5]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[4]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[3]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[2]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[1]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_L_in[0]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[15]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[14]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[13]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[12]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[11]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[10]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[9]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[8]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[7]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[6]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[5]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[4]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[3]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[2]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[1]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port data_R_in[0]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
-WARNING: [Synth 8-3331] design eq_core_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
-WARNING: [Synth 8-3331] design EQ_27_band_eq_core_0_0 has unconnected port s_axis_tstrb[3]
-WARNING: [Synth 8-3331] design EQ_27_band_eq_core_0_0 has unconnected port s_axis_tstrb[2]
-WARNING: [Synth 8-3331] design EQ_27_band_eq_core_0_0 has unconnected port s_axis_tstrb[1]
-WARNING: [Synth 8-3331] design EQ_27_band_eq_core_0_0 has unconnected port s_axis_tstrb[0]
 INFO: [Synth 8-3886] merging instance 'inst/eq_core_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/eq_core_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/eq_core_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'inst/eq_core_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/eq_core_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
@@ -467,49 +592,49 @@ INFO: [Synth 8-3332] Sequential element (inst/audio_receiver_S_AXIS_inst/data_R_
 INFO: [Synth 8-3332] Sequential element (inst/audio_receiver_S_AXIS_inst/data_R_reg[1]) is unused and will be removed from module EQ_27_band_eq_core_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/audio_receiver_S_AXIS_inst/data_R_reg[0]) is unused and will be removed from module EQ_27_band_eq_core_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 760.840 ; gain = 496.762
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 760.262 ; gain = 497.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name          | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|eq_core_v1_0_S00_AXI | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 19     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 19     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 19     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 19     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 19     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 19     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 19     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 19     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 19     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|eq_core_v1_0_S00_AXI | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+---------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++---------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|eq_core_v1_0_S00_AXI | A2*B             | 19     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A2*B  | 19     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A2*B             | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A''*B            | 19     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A''*B | 19     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A''*B            | 18     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A2*B             | 19     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A2*B  | 19     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A2*B             | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A''*B            | 19     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A''*B | 19     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A''*B            | 18     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A2*B             | 19     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A2*B  | 19     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A2*B             | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A''*B            | 19     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A''*B | 19     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A''*B            | 18     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A2*B             | 19     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A2*B  | 19     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A2*B             | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A''*B            | 19     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A''*B | 19     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | A''*B            | 18     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|eq_core_v1_0_S00_AXI | (PCIN>>17)+A''*B | 18     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
++---------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -525,13 +650,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 820.285 ; gain = 556.207
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 821.285 ; gain = 558.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 821.750 ; gain = 557.672
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 822.719 ; gain = 559.488
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -542,40 +667,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:548]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:548]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:548]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:548]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:549]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:549]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:549]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:549]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:548]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:548]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:548]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:548]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:549]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:549]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:549]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:549]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:545]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:545]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:545]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:545]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:546]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:546]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:546]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:546]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:545]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:545]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:545]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:545]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:546]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:546]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:546]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v:546]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 846.859 ; gain = 582.781
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 849.625 ; gain = 586.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -599,7 +692,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 846.859 ; gain = 582.781
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 849.625 ; gain = 586.395
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -612,7 +705,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 846.859 ; gain = 582.781
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 849.625 ; gain = 586.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -624,25 +717,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 846.859 ; gain = 582.781
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 849.625 ; gain = 586.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 846.859 ; gain = 582.781
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 849.625 ; gain = 586.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 846.859 ; gain = 582.781
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 849.625 ; gain = 586.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 846.859 ; gain = 582.781
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 849.625 ; gain = 586.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -660,50 +753,48 @@ Report Cell Usage:
 +------+--------+------+
 |1     |CARRY4  |   112|
 |2     |DSP48E1 |    32|
-|3     |LUT1    |     6|
-|4     |LUT2    |   323|
+|3     |LUT1    |     5|
+|4     |LUT2    |   322|
 |5     |LUT3    |    88|
-|6     |LUT4    |   110|
-|7     |LUT5    |    10|
-|8     |LUT6    |   180|
-|9     |FDCE    |   223|
-|10    |FDRE    |   414|
-|11    |FDSE    |     1|
+|6     |LUT4    |   106|
+|7     |LUT5    |     9|
+|8     |LUT6    |   177|
+|9     |FDRE    |   702|
+|10    |FDSE    |     1|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+-------------------------------+----------------------+------+
 |      |Instance                       |Module                |Cells |
 +------+-------------------------------+----------------------+------+
-|1     |top                            |                      |  1499|
-|2     |  inst                         |eq_core               |  1499|
+|1     |top                            |                      |  1554|
+|2     |  inst                         |eq_core               |  1266|
 |3     |    audio_receiver_S_AXIS_inst |audio_receiver_S_AXIS |    44|
 |4     |    audio_sender_M_AXIS_inst   |audio_sender_M_AXIS   |    12|
-|5     |    eq_core_v1_0_S00_AXI_inst  |eq_core_v1_0_S00_AXI  |  1443|
+|5     |    eq_core_v1_0_S00_AXI_inst  |eq_core_v1_0_S00_AXI  |  1210|
 +------+-------------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 846.859 ; gain = 582.781
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 849.625 ; gain = 586.395
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 846.859 ; gain = 233.660
-Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 846.859 ; gain = 582.781
+Synthesis finished with 0 errors, 0 critical warnings and 222 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 849.625 ; gain = 237.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 849.625 ; gain = 586.395
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'EQ_27_band_eq_core_0_0' is not ideal for floorplanning, since the cellview 'eq_core_v1_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-144 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
+135 Infos, 152 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 846.859 ; gain = 594.250
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 849.625 ; gain = 598.047
 INFO: [Common 17-1381] The checkpoint 'C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/EQ_27_band_eq_core_0_0_synth_1/EQ_27_band_eq_core_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Zynq_Book/EQ_27_band/EQ_27_band.srcs/sources_1/bd/EQ_27_band/ip/EQ_27_band_eq_core_0_0/EQ_27_band_eq_core_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Zynq_Book/EQ_27_band/EQ_27_band.runs/EQ_27_band_eq_core_0_0_synth_1/EQ_27_band_eq_core_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file EQ_27_band_eq_core_0_0_utilization_synth.rpt -pb EQ_27_band_eq_core_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 846.859 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Feb  3 14:08:55 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 849.625 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  6 10:11:13 2018...

@@ -52,10 +52,10 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../EQ_27_band.srcs/sources_1/
 "../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/98b9/src/i2s_receiver.v" \
 "../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/98b9/hdl/axi_i2s_receiver_v1_0.v" \
 "../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ip/EQ_27_band_axi_i2s_receiver_0_0/sim/EQ_27_band_axi_i2s_receiver_0_0.v" \
-"../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/audio_receiver_S_AXIS.v" \
-"../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/audio_sender_M_AXIS.v" \
-"../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core_v1_0_S00_AXI.v" \
-"../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/c063/eq_core.v" \
+"../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/audio_receiver_S_AXIS.v" \
+"../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/audio_sender_M_AXIS.v" \
+"../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core_v1_0_S00_AXI.v" \
+"../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/58f9/eq_core.v" \
 "../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ip/EQ_27_band_eq_core_0_0/sim/EQ_27_band_eq_core_0_0.v" \
 "../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/2e48/src/audio_transmitter_S_AXIS.v" \
 "../../../../EQ_27_band.srcs/sources_1/bd/EQ_27_band/ipshared/2e48/src/axi_i2s_transmitter.v" \

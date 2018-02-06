@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Sat Feb  3 14:07:56 2018
+//Date        : Tue Feb  6 10:20:37 2018
 //Host        : Del_Alienware running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target EQ_27_band.bd
 //Design      : EQ_27_band
@@ -9,6 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+/* CLK1 = 10 MHz */
 (* CORE_GENERATION_INFO = "EQ_27_band,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=EQ_27_band,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=8,numNonXlnxBlks=1,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=2,da_clkrst_cnt=6,da_ps7_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "EQ_27_band.hwdef" *) 
 module EQ_27_band
    (BCLK,
@@ -340,7 +341,9 @@ module EQ_27_band
         .S00_AXI_wstrb(S00_AXI_1_WSTRB),
         .S00_AXI_wvalid(S00_AXI_1_WVALID));
   EQ_27_band_eq_core_0_0 eq_core_0
-       (.lrclk(axi_i2s_transmitter_0_lrclk),
+       (.BRAM_DOUT({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0}),
+        .iir_clk(processing_system7_0_FCLK_CLK2),
+        .lrclk(axi_i2s_transmitter_0_lrclk),
         .m_axis_aclk(processing_system7_0_FCLK_CLK0),
         .m_axis_aresetn(rst_ps7_0_100M_peripheral_aresetn),
         .m_axis_tdata(eq_core_0_m_axis_TDATA),

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1517695745">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1517941287">
   <File Type="PA-TCL" Name="EQ_27_band_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="EQ_27_band_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="EQ_27_band_wrapper_reports.tcl"/>

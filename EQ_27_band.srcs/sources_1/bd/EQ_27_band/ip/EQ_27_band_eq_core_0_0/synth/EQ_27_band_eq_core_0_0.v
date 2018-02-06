@@ -47,15 +47,22 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:eq_core:1.0
-// IP Revision: 56
+// IP VLNV: xilinx.com:user:eq_core:2.0
+// IP Revision: 10
 
 (* X_CORE_INFO = "eq_core,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "EQ_27_band_eq_core_0_0,eq_core,{}" *)
-(* CORE_GENERATION_INFO = "EQ_27_band_eq_core_0_0,eq_core,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=eq_core,x_ipVersion=1.0,x_ipCoreRevision=56,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M_AXIS_TDATA_WIDTH=32,C_M_AXIS_START_COUNT=32,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7,C_S_AXIS_TDATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "EQ_27_band_eq_core_0_0,eq_core,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=eq_core,x_ipVersion=2.0,x_ipCoreRevision=10,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M_AXIS_TDATA_WIDTH=32,C_M_AXIS_START_COUNT=32,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7,C_S_AXIS_TDATA_WIDTH=32}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module EQ_27_band_eq_core_0_0 (
+  iir_clk,
   lrclk,
+  BRAM_RST,
+  BRAM_EN,
+  BRAM_WE,
+  BRAM_ADDR,
+  BRAM_DOUT,
+  BRAM_CLK,
   m_axis_aclk,
   m_axis_aresetn,
   m_axis_tvalid,
@@ -93,7 +100,21 @@ module EQ_27_band_eq_core_0_0 (
   s_axis_tvalid
 );
 
+input wire iir_clk;
 input wire lrclk;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM RST" *)
+output wire BRAM_RST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM EN" *)
+output wire BRAM_EN;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM WE" *)
+output wire [15 : 0] BRAM_WE;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM ADDR" *)
+output wire [4 : 0] BRAM_ADDR;
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM DOUT" *)
+input wire [127 : 0] BRAM_DOUT;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_WRITE_MODE READ_WRITE" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM CLK" *)
+output wire BRAM_CLK;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_aclk, ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET m_axis_aresetn, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN EQ_27_band_processing_system7_0_0_FCLK_CLK0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m_axis_aclk CLK" *)
 input wire m_axis_aclk;
@@ -181,7 +202,14 @@ input wire s_axis_tvalid;
     .C_S00_AXI_ADDR_WIDTH(7),
     .C_S_AXIS_TDATA_WIDTH(32)
   ) inst (
+    .iir_clk(iir_clk),
     .lrclk(lrclk),
+    .BRAM_RST(BRAM_RST),
+    .BRAM_EN(BRAM_EN),
+    .BRAM_WE(BRAM_WE),
+    .BRAM_ADDR(BRAM_ADDR),
+    .BRAM_DOUT(BRAM_DOUT),
+    .BRAM_CLK(BRAM_CLK),
     .m_axis_aclk(m_axis_aclk),
     .m_axis_aresetn(m_axis_aresetn),
     .m_axis_tvalid(m_axis_tvalid),

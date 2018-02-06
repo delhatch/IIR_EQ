@@ -4,7 +4,7 @@
 	module eq_core_v1_0_S00_AXI #
 	(
 		// Users to add parameters here
-        parameter DIV_FACTOR = 4,    // Slows down the IIR state machine to allow computations to finish.
+        //parameter DIV_FACTOR = 4,    // Slows down the IIR state machine to allow computations to finish.
 		// User parameters ends
 		// Do not modify the parameters beyond this line
 
@@ -15,6 +15,7 @@
 	)
 	(
 		// Users to add ports here -----------------------------------------
+		input iir_clk,
 	    input lrclk,
         input signed [C_S_AXI_DATA_WIDTH-1:0] data_L_in,     // Incoming audio, going into this module, for processing.
         input signed [C_S_AXI_DATA_WIDTH-1:0] data_R_in,
@@ -106,14 +107,14 @@
 	// User wires and registers ===========================================================================================
     wire signed [35:0] Rx, Lx;         // Will hold audio words >>> 12 to align decimal points for adding to interim results registers.
     wire signed [31:0] a1, a2, b1, b2; // coefficients. In Q2.30 format.
-    reg signed [35:0] Rz0, Rz1, Rz2;          // delay registers, in Q12.24 format.
-    reg signed [35:0] Lz0, Lz1, Lz2;
+    reg signed [35:0] Rz1, Rz2;          // delay registers, in Q12.24 format.
+    reg signed [35:0] Lz1, Lz2;
     reg signed [35:0] Lt1, Rt1;          // holds intermediate values.
     reg signed [35:0] Lt2, Rt2;
     reg [1:0] state, next_state;
     reg signed [67:0] Rjunk1, Rjunk2, Rjunk3, Rjunk4;
     reg signed [67:0] Ljunk1, Ljunk2, Ljunk3, Ljunk4;
-    reg signed [35:0] Rtempout, Ltempout;   // Holds results of multiplications.
+    //reg signed [35:0] Rtempout, Ltempout;   // Holds results of multiplications.
     wire enable;
     reg [3:0] cntr;
     wire [3:0] next_cntr;    
@@ -473,103 +474,55 @@
 	end    
 
 // Add user logic here ========================================================================================================================
-/*
-eq_module eq1(
-   .clk( iir_clk ),
-   //.clk_enable( max_cnt ),              // This is pulse every 2,4, or maybe 8 pulses (pending timing analysis). Gives combinaotrial logic time to finish.
-   .reset_n( S_AXI_ARESETN ),
-   .process_start( gostate ),           // Indicates that the next L/R word is available and should be processed. Linked to falling edge of lrclk word clock.
-   .data_L_in( data_L_in ),     // Incoming audio, going into this module, for processing.
-   .data_R_in( data_R_in ),
-   .a1_in ( slv_reg1 ),            // coefficients. Note b0 is defined as 1.0.
-   .a2_in ( slv_reg2 ),
-   .b1_in ( slv_reg3 ),
-   .b2_in ( slv_reg4 ),
-   .audio_on( slv_reg0[0] ),                    // Must turn off audio during coefficient changes, to clear the z1, z2 delay registers.
-   .data_L_out( data_L_out_0 ),     // Audio leaving this module. Out to the DAC (via the xmitter module).
-   .data_R_out( data_R_out_0 )
-);
-eq_module eq2(
-   .clk( iir_clk ),
-   //.clk_enable( max_cnt ),              // This is pulse every 2,4, or maybe 8 pulses (pending timing analysis). Gives combinaotrial logic time to finish.
-   .reset_n( S_AXI_ARESETN ),
-   .process_start( gostate ),           // Indicates that the next L/R word is available and should be processed. Linked to falling edge of lrclk word clock.
-   .data_L_in( data_L_in ),     // Incoming audio, going into this module, for processing.
-   .data_R_in( data_R_in ),
-   .a1_in ( slv_reg5 ),            // coefficients. Note b0 is defined as 1.0.
-   .a2_in ( slv_reg6 ),
-   .b1_in ( slv_reg7 ),
-   .b2_in ( slv_reg8 ),
-   .audio_on( slv_reg0[0] ),                    // Must turn off audio during coefficient changes, to clear the z1, z2 delay registers.
-   .data_L_out( data_L_out_1 ),     // Audio leaving this module. Out to the DAC (via the xmitter module).
-   .data_R_out( data_R_out_1 )
-);
-assign data_R_out = (data_R_out_0 + data_R_out_1) >>> 1;
-assign data_L_out = (data_L_out_0 + data_L_out_1) >>> 1;
-*/
 // Convert audio from 32-bit left-justified, to 36-bit word with dp after 12 significant bits.
-// Use slv_reg4[0] to mute the incoming audio. Must mute, then change coefficients, then un-mute!!
 //assign Rx = slv_reg4[0] ? { {20{data_R_in[31]} }, data_R_in[31:16] } : 32'h0000_0000;   // Align decimal point with the registers that hold the intermediate results. So can add directly.
 //assign Lx = slv_reg4[0] ? { {20{data_L_in[31]} }, data_L_in[31:16] } : 32'h0000_0000;
 assign Rx = { {20{data_R_in[31]} }, data_R_in[31:16] };   // Align decimal point with the registers that hold the intermediate results. So can add directly.
 assign Lx = { {20{data_L_in[31]} }, data_L_in[31:16] };
-    // Convert multiplicitive constants from 32-bit Q5.27, to 30 bit Q2.30 format.
+    // Convert mcoefficient constants from 32-bit Q5.27, to Q2.30 format.
     assign a1 = {slv_reg0[28:0],{3{1'b0}}};
     assign a2 = {slv_reg1[28:0],{3{1'b0}}};
     assign b1 = {slv_reg2[28:0],{3{1'b0}}};
     assign b2 = {slv_reg3[28:0],{3{1'b0}}};
     
     // state machine
-    always @ ( posedge S_AXI_ACLK or negedge S_AXI_ARESETN ) begin
-       if( ~S_AXI_ARESETN ) begin
+    always @ ( posedge iir_clk ) begin
+       if( ~S_AXI_ARESETN )
           state <= 0;
-          end
-       else if( max_cnt )
+       else
           state <= next_state;
-          else state <= state;
     end
     
     always @ (*) begin
        next_state = 0;
        case ( state )
-          0 : if( gostate ) next_state = 1;
+          0 : if( go ) next_state = 1;
               else next_state = 0;
-          1 : next_state = 2;
-          2 : next_state = 0;
+          1 : next_state = 0;
        endcase
     end
     
-    always @ ( posedge S_AXI_ACLK or negedge S_AXI_ARESETN ) begin
+    always @ ( posedge iir_clk ) begin
        if( ~S_AXI_ARESETN ) begin
-           Rz0 <= 0;
            Rz1 <= 0;
            Rz2 <= 0;
-           Lz0 <= 0;
            Lz1 <= 0;
            Lz2 <= 0;
-           //data_R_out <= 32'b1;
           end
-       else if( max_cnt )
+       else
           case ( state )
-             0 : reset_go <= 0;
              1 : begin
-                    Rz0 <= Rt1;
-                    Lz0 <= Lt1;
-                    reset_go <= 1;
-                 end
-                 
-             2 : begin
-                    data_R_out <= Rtempout << 14;  // would be 16 for inputs between +0.5 to -0.5. but output can be slightly >0.5
-                    data_L_out <= Ltempout << 14;  // So output is always -6db from input.
+                    data_R_out <= (Rt1 + Rt2) << 14;  // would be 16 for inputs between +0.5 to -0.5. but output can be slightly >0.5
+                    data_L_out <= (Lt1 + Lt2) << 14;  // So output is always -6db from input.
                     Lz2 <= Lz1;
                     Rz2 <= Rz1;
-                    Lz1 <= Lz0;
-                    Rz1 <= Rz0;
-                    reset_go <= 0;
+                    Lz1 <= Lt1;
+                    Rz1 <= Rt1;
                  end
           endcase
     end
     
+    // Combinatorial logic for the IIR filter calculations.
     always @ (*) begin
        Rjunk1 = Rz2 * a2;          // Q12.24 * Q2.30 = 67 bit result
        Rjunk2 = Rz1 * a1;
@@ -583,45 +536,10 @@ assign Lx = { {20{data_L_in[31]} }, data_L_in[31:16] };
        Ljunk4 = Lz1*b1;
        Rt2 = ( (Rjunk3)  >>> 30 ) + ( (Rjunk4) >>> 30 );
        Lt2 = ( (Ljunk3)  >>> 30 ) + ( (Ljunk4) >>> 30 );
-       Rtempout = Rz0 + Rt2;
-       Ltempout = Lz0 + Lt2;
     end
     
-    // This counter provides a single pulse every DIV_FACTOR clock cycles. That pulse
-    //    allows the IIR state machine to advance. Allows combinatorial computations time to finish.
-    always @ ( posedge S_AXI_ACLK or negedge S_AXI_ARESETN ) begin
-       if( ~S_AXI_ARESETN )
-          cntr <= 0;
-       else
-          cntr <= next_cntr;
-    end
-    
-    assign next_cntr = ( cntr == DIV_FACTOR-1 ) ? 0 : cntr+1; 
-    assign max_cnt = ( cntr == DIV_FACTOR - 1 ) ? 1'b1 : 1'b0;
-    
-    // GO state machine  
-    // Signals the DSP engine it is time to process the new audio words. Waits for that DSP engine to signal
-    //    that it is done prior to clearing the flag.  
-    always @ ( posedge S_AXI_ACLK or negedge S_AXI_ARESETN )
-      if( ~S_AXI_ARESETN )
-         gostate <= 1'b0;
-      else
-         gostate <= next_gostate;
-             
-    always @ (*) begin
-       next_gostate = 1'b0;
-       case ( gostate )
-          1'b0 : if( go ) next_gostate = 1'b1;                  // On the rising edge of LRCLK, ask for data
-                 else next_gostate = 1'b0;
-          1'b1 : if( reset_go ) next_gostate = 1'b0;                  // If neither event, just keep asking (or not).
-                 else next_gostate = 1'b1;
-       endcase
-    end
-    
-    always @ ( posedge S_AXI_ACLK ) Y <= lrclk;  // Pulse every lrclk falling edge, when L/R data is stable.
+    always @ ( posedge iir_clk ) Y <= lrclk;  // Pulse every lrclk falling edge, when L/R data is stable.
     assign go = Y & ~lrclk;    
-	// User logic ends
-
 	// User logic ends
 
 	endmodule

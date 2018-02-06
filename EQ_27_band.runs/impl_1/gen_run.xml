@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1517695745">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1517941287">
   <File Type="PWROPT-DCP" Name="EQ_27_band_wrapper_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="EQ_27_band_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="EQ_27_band_wrapper.tcl"/>

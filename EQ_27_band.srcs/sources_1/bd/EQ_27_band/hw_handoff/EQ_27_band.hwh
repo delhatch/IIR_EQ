@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Feb  3 14:07:57 2018" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Feb  6 10:20:38 2018" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.3" DEVICE="7z020" NAME="EQ_27_band" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -1467,7 +1467,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/eq_core_0" HWVERSION="1.0" INSTANCE="eq_core_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="eq_core" VLNV="xilinx.com:user:eq_core:1.0">
+    <MODULE FULLNAME="/eq_core_0" HWVERSION="2.0" INSTANCE="eq_core_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="eq_core" VLNV="xilinx.com:user:eq_core:2.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="s00_axi" NAME="reg0" RANGE="4096" USAGE="register"/>
@@ -1484,11 +1484,22 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x43C0FFFF"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="I" NAME="iir_clk" SIGIS="undef" SIGNAME="processing_system7_0_FCLK_CLK2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK2"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="lrclk" SIGIS="undef" SIGNAME="axi_i2s_transmitter_0_lrclk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_i2s_transmitter_0" PORT="lrclk"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="BRAM_RST" SIGIS="rst"/>
+        <PORT DIR="O" NAME="BRAM_EN" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="BRAM_WE" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="4" NAME="BRAM_ADDR" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="127" NAME="BRAM_DOUT" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="BRAM_CLK" SIGIS="clk"/>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_axis_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
@@ -1759,6 +1770,21 @@
             <PORTMAP LOGICAL="RRESP" PHYSICAL="s00_axi_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="s00_axi_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="s00_axi_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM" TYPE="INITIATOR" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="EN" PHYSICAL="BRAM_EN"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="BRAM_DOUT"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="BRAM_WE"/>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="BRAM_ADDR"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="BRAM_CLK"/>
+            <PORTMAP LOGICAL="RST" PHYSICAL="BRAM_RST"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -2933,7 +2959,11 @@
             <CONNECTION INSTANCE="External_Ports" PORT="FCLK_CLK1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="10000000" DIR="O" NAME="FCLK_CLK2" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="10000000" DIR="O" NAME="FCLK_CLK2" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="eq_core_0" PORT="iir_clk"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="ext_reset_in"/>

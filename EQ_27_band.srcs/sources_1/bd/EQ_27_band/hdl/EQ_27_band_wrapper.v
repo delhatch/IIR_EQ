@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Sat Feb  3 14:07:56 2018
+//Date        : Tue Feb  6 10:20:37 2018
 //Host        : Del_Alienware running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target EQ_27_band_wrapper.bd
 //Design      : EQ_27_band_wrapper
