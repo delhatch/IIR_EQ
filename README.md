@@ -26,9 +26,7 @@ This processing module also receives the filter coefficients from the Zynq ARM p
 
 ** Calculating the Coefficients
 
-Whenever the center frequency or boost/cut amount is changed, the IIR filter needs new coefficients. These are calculated in C code, in floating point format.
-
-The filter operates using fixed-point integer math for efficiency, so the C code converts the coeeficients to a 32-bit fractional integer word, and then sends them to registers in the eq_core_0 module.
+Whenever the center frequency or boost/cut amount is changed, the IIR filter needs new coefficients. These are calculated in C code, in floating point format. The filter operates using fixed-point integer math for efficiency, so the C code then converts the coeeficients to a 32-bit fractional integer word, and then sends them to registers in the eq_core_0 module.
 
 ** Create Project
 
