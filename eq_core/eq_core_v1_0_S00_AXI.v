@@ -512,8 +512,8 @@ assign Lx = { {20{data_L_in[31]} }, data_L_in[31:16] };
        else
           case ( state )
              1 : begin
-                    data_R_out <= (Rt1 + Rt2) << 14;  // would be 16 for inputs between +0.5 to -0.5. but output can be slightly >0.5
-                    data_L_out <= (Lt1 + Lt2) << 14;  // So output is always -6db from input.
+                    data_R_out <= (Rt1 + Rt2) << 14;
+                    data_L_out <= (Lt1 + Lt2) << 14;
                     Lz2 <= Lz1;
                     Rz2 <= Rz1;
                     Lz1 <= Lt1;
